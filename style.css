@@ -263,6 +263,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 15px;
 }
 
 .footer-logo-text h3 {
@@ -388,11 +389,75 @@ footer {
 }
 
 .caption-container div caption {
-  color: #534C64;
+  color: #534c64;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.875rem;
 }
+
+.img-p p {
+  color: #0b0223;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.game-pills{
+  margin-top: 100px;
+}
+
+.img-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 15.1875rem;
+  height: 5rem;
+  flex-shrink: 0;
+  border-radius: 3.125rem;
+}
+
+.img-p:hover{
+  cursor: pointer;
+  border: 1px solid #ff42a5;
+}
+
+
+
+.five{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.three-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.two{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.three-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
 
 /* responsive media queries */
 
@@ -461,12 +526,18 @@ footer {
     top: -80px;
   }
 
-  .online-games-images{
+  .online-games-images {
     flex-direction: column;
   }
-  .caption-container{
+  .caption-container {
     visibility: hidden;
   }
+
+  .footer-pages-links p {
+    font-size: 0.8rem;
+  }
+
+  
 }
 
 /* for medium devices */
@@ -534,10 +605,10 @@ footer {
     top: -80px;
   }
 
-  .online-games-images{
+  .online-games-images {
     flex-direction: column;
   }
-  .caption-container{
+  .caption-container {
     visibility: hidden;
   }
 }
