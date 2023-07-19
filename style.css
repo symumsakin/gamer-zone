@@ -162,7 +162,7 @@ nav a {
   text-transform: uppercase;
 }
 
-.go-rogue{
+.go-rogue {
   display: inline-flex;
   margin: 30px auto 0 auto;
   padding: 1rem 2rem;
@@ -170,7 +170,7 @@ nav a {
   gap: 0.625rem;
   border: none;
   border-radius: 3rem;
-  background: #4EC5F7;
+  background: #4ec5f7;
 
   color: #fff;
   font-family: Work Sans;
@@ -186,6 +186,75 @@ nav a {
   margin-right: 8rem;
 }
 
+.play-text-container{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 50%;
+}
+
+.play-text h3 {
+  text-align: right;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem; /* 125% */
+
+  color: #0b0223;
+  font-family: Work Sans;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.8rem;
+}
+
+.play-text h3 span {
+  text-align: right;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem; /* 125% */
+
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Work Sans;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.8rem;
+}
+
+
+.play-text p {
+  color: #534c64;
+  text-align: right;
+  font-family: Work Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 166.667% */
+}
+
+.play-instantly{
+    display: flex;
+    gap: 7rem;
+    margin-top: 90px;
+}
+
+.play-img img:nth-child(1){
+  width: 25vw;
+}
+
+.play-img img:nth-child(2){
+  width: 12.5vw;
+  position: relative;
+  right: 400px;
+  top: 50px;
+}
+
+
 /* responsive media queries */
 
 /* for small devices */
@@ -197,11 +266,11 @@ nav a {
     width: 100%;
   }
 
-  .banner{
+  .banner {
     flex-direction: column-reverse;
   }
 
-  .banner-text-section{
+  .banner-text-section {
     margin: 0;
     width: 96vw;
     height: 100vh;
@@ -211,6 +280,49 @@ nav a {
     width: 75vw;
     margin: 0;
   }
+
+  .play-instantly{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .play-text-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .play-text p{
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .play-text h3{
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .play-text h3 span{
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+
+  .play-img img:nth-child(1){
+    width: 70vw;
+    margin: 0 0 0 70px;
+    padding: 0;
+  }
+  
+  .play-img img:nth-child(2){
+    width: 25vw;
+    position: relative;
+    left: 40px;
+    top: -80px;
+  }
+
 }
 
 /* for medium devices */
