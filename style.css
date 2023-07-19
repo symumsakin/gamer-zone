@@ -80,3 +80,26 @@ nav a {
   background: rgba(11, 2, 35, 0.1);
   padding: 10px 20px;
 }
+
+
+/* responsive media queries */
+
+/* for small devices */
+
+@media screen and (max-width: 576px) {
+  .nav-div{
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+}
+
+/* for medium devices */
+
+@media screen and (min-width: 576px) and (max-width: 960px){
+  .nav-div{
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+}
