@@ -233,7 +233,7 @@ nav a {
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5rem; /* 166.667% */
+  line-height: 1.5rem;
 }
 
 .play-instantly {
@@ -337,6 +337,63 @@ footer {
   font-size: 0.9rem;
 }
 
+.online-games-images {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.online-games img {
+  width: 15rem;
+  flex-shrink: 0;
+}
+
+.online-games h3 {
+  margin-top: 60px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.8125rem;
+  color: #0b0223;
+}
+
+.online-games h3 span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.online-games p {
+  color: #534c64;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.caption-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.caption-container div {
+  margin-top: 10px;
+  width: 15rem;
+}
+
+.caption-container div caption {
+  color: #534C64;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.875rem;
+}
+
 /* responsive media queries */
 
 /* for small devices */
@@ -403,6 +460,13 @@ footer {
     left: 40px;
     top: -80px;
   }
+
+  .online-games-images{
+    flex-direction: column;
+  }
+  .caption-container{
+    visibility: hidden;
+  }
 }
 
 /* for medium devices */
@@ -412,5 +476,68 @@ footer {
     flex-direction: column;
     gap: 20px;
     width: 100%;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+  }
+
+  .banner-text-section {
+    margin: 0;
+    width: 96vw;
+    height: 100vh;
+  }
+
+  .banner-img-section img {
+    width: 75vw;
+    margin: 0;
+  }
+
+  .play-instantly {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .play-text-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .play-text p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .play-text h3 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .play-text h3 span {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .play-img img:nth-child(1) {
+    width: 70vw;
+    margin: 0 0 0 70px;
+    padding: 0;
+  }
+
+  .play-img img:nth-child(2) {
+    width: 25vw;
+    position: relative;
+    left: 40px;
+    top: -80px;
+  }
+
+  .online-games-images{
+    flex-direction: column;
+  }
+  .caption-container{
+    visibility: hidden;
   }
 }
