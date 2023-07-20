@@ -511,6 +511,7 @@ button:hover {
   transition: opacity 0.3s ease;
   border-radius: 1rem;
   cursor: pointer;
+  border: 2px solid red;
 }
 
 /* responsive media queries */
